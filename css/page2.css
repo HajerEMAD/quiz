@@ -1,0 +1,37 @@
+:root{
+    --red-color:rgba(220, 53, 69, 1);
+    --blue-color:rgba(207, 244,252, 1);
+    --green:rgba(25, 135,84, 1);
+    --p-color:rgb(5, 81, 96);
+}
+.body{
+    background-color: azure;
+}
+.col{
+    width: fit-content;
+}
+.meal-recipes .recipe{
+    text-align: center;
+    padding: 3px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color:var(--p-color);
+    background-color: var(--blue-color);
+    font-size: 16px;
+}
+button a{
+    text-decoration: none;
+    color:white;
+}
+ .button-one,
+.button-two{
+padding:5px;
+border:2px solid transparent;
+border-radius:5px ;
+}
+.button-one{
+    background-color: var(--red-color);
+}
+.button-two {
+    background-color: var(--green);
+}

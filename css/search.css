@@ -1,0 +1,13 @@
+input{
+    border:1px solid white;
+    background-color:black;
+    border-radius: 5px;
+    width:40%;
+    font-size: 18px;
+    color:white;
+}
+input:focus{
+    border:solid 1px  rgb(125, 231, 235);
+     outline:4px solid rgba(125, 231, 235, 0.199) ;
+     color: white;
+}

@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    overflow:hidden;
+}
+*{
+    box-sizing: border-box;
+}
+                        /* side-bar */
+.sidebar-container{
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    width:25%; 
+    transform: translateX(-80%);
+}
+#side-bar{
+    background-color: white;
+    width:20%;
+    opacity: 1;
+    z-index: 555;
+    animation-name: sidbar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+   
+}
+#logo{
+width:90%;
+text-align: center;
+}
+
+@keyframes sidebar {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes sidebarReversed {
+    from{
+        transform: translateX(0px);
+        
+    }
+    to{
+        transform: translateX(-80%);
+        
+    }
+    
+}
+
+@keyframes sidebarDispaly {
+    0%{
+    transform: translateX(-80%);
+    }
+    to{
+    transform: translateX(0%);
+    }
+}
+.list{
+    background-color: rgb(2, 2, 2);
+    width:80%;
+    top: 0%;
+    bottom: 0%;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 555;
+    justify-content: center;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+}
+
+.list span{
+    color:white;
+    cursor: pointer;
+}
+span.one{
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    
+}
+span.two{
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    
+}
+span.three{
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    
+}
+span.four{
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    
+}
+span.five{
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    
+}
+@keyframes sidebar-list-one{
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-180px);
+        opacity: 1;
+    }
+}
+@keyframes sidebar-list-two{
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-170px);
+        opacity: 1;
+    }
+}
+@keyframes sidebar-list-three{
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-160px);
+        opacity: 1;
+    }
+}
+@keyframes sidebar-list-four{
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-150px);
+        opacity: 1;
+    }
+}
+@keyframes sidebar-list-five{
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-140px);
+        opacity: 1;
+    }
+}
+.list a{
+    text-decoration: none;
+    color:white;
+}
+.sidebar-footer{
+    transform: translateY(170px);
+}
+
+
+.img-container{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+.cover{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(245, 245, 220, 0.596);
+    transform: translateY(5000px);
+    transition: all 0.6s;
+
+}
+
+.img-container:hover .cover{
+    transform: translateY(0px);
+}
+
+/* loading */
+
+.loading{
+    opacity: 1;
+    background-color: black;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    z-index: 99999;
+}
+@keyframes loading{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+ 
+}
+
+.fa-spinner {
+    color:white;
+    font-size: 30px;
+}
+#areas div,
+#ingrediens div{
+    text-align: center !important;
+    height:246px;
+    overflow: hidden;
+    
+    
+}
+#areas  .fa-house-laptop,
+#ingrediens .fa-drumstick-bite{
+    font-size: 66px !important;
+    cursor: pointer;
+    overflow: hidden;
+}
+#areas  h3,
+#ingrediens  h3
+#ingrediens-meals p{
+    cursor: pointer;
+}
+
+ div .submit {
+    width: 100px;
+    background-color: black;
+    color: rgba(220, 53, 69, 1);
+    padding: 5px;
+    border:1px solid rgba(220, 53, 69, 1);
+    border-radius:10px ;
+}
+.submit-right{
+    background-color: rgba(220, 53, 69, 1);
+    color: white;
+    padding: 5px;
+    border:1px solid rgba(220, 53, 69, 1);
+    border-radius:10px ;
+}
+.input-contact:focus{
+    color:black;
+}
+.input-contact p{
+    background-color: rgba(248, 215, 218, 1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius:10px 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:992px) {
+    .sidebar-container{
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        width:50%; 
+        transform: translateX(-80%);
+        
+    }
+    #areas .col-3 .fa-house-laptop,
+#ingrediens .col-3 .fa-drumstick-bite{
+    font-size: 100px;
+}
+.contact-container .row {
+    width:100% !important;
+}
+    }
+    @media only screen and (max-width:768px) {
+      
+      }
